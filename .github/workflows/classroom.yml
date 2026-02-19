@@ -18,7 +18,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Collatz - Basic Sequence
-        setup-command: ''
+        setup-command: pip install pytest
         command: pytest test_assignment.py::test_01_collatz_basic -v
         timeout: 5
         max-score: 5
