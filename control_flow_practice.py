@@ -1,18 +1,20 @@
 """
-COMP 163 - Introduction to Computer Programming
-Assignment: Loop Mastery Assignment (Chapter 5)
-Name: Kahlil Batieste
-GitHub Username: kahlilb7
-Date: 02/16/2026
-Description: This program demonstrates mastery of while loops, for loops,
-and nested loops through four challenges: Collatz sequence, prime checker,
-multiplication table, and a statistics dashboard with a bar chart.
-Ai usage: None
+Python Control Flow Practice
+
+This program demonstrates core Python concepts including loops,
+conditionals, and basic data processing through several small tools.
+
+Features:
+- Collatz sequence generator
+- Prime number checker
+- Multiplication table
+- Statistics dashboard
+
+Author: Kahlil Batieste
 """
 
-# ========================================
-# Step 1: Collatz Sequence 
-# ========================================
+# --- Collatz Sequence ---
+
 
 start_number = int(input("Enter starting number: "))
 
@@ -33,9 +35,7 @@ while current != 1:
 print()
 print("Steps:", steps)
 
-# ========================================
-# Step 2: Prime Checker
-# ========================================
+# --- Prime Number Checker ---
 
 number = int(input("Enter a number: "))
 
@@ -55,9 +55,7 @@ else:
     print(f"{number} is not prime (divisible by {first_divisor})")
 
 
-# ===========================================
-# Step 3: Multiplication Table (Nested Loops)
-# ===========================================
+# --- Multiplication Table ---
 
 print("Multiplication Table:")
 
@@ -74,9 +72,7 @@ for row in range(1, 11):
     print()
 
 
-# ========================================
-# Step 4: Statistics Dashboard (All Three Loop Types)
-# ========================================
+# --- Statistics Dashboard ---
 
 print("=== Statistics Dashboard ===")
 print("Enter positive numbers (enter -1 to finish):")
