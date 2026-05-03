@@ -15,8 +15,13 @@ Author: Kahlil Batieste
 
 # --- Collatz Sequence ---
 
+while True:
+    try:
+        start_number = int(input("Enter starting number: "))
+        break
+    except ValueError:
+        print("Please enter a valid number.")
 
-start_number = int(input("Enter starting number: "))
 
 current = start_number
 steps = 0
@@ -73,7 +78,6 @@ for row in range(1, 11):
 
 
 # --- Statistics Dashboard ---
-
 print("=== Statistics Dashboard ===")
 print("Enter positive numbers (enter -1 to finish):")
 
